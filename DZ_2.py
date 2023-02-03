@@ -11,11 +11,13 @@
 from random import randint
 coin_qtt = int(input('Введите количество монет: '))
 eagl = 0
+res = []
 
 for _ in range(coin_qtt):
     value = randint(0, 1)
-    print(value)
+    res.append(value)
     if value == 0:
         eagl += 1
 
+print (res)
 print(eagl)
